@@ -3,10 +3,11 @@ import httpStatus from "http-status";
 import { useContext ,useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { createContext } from "react";
+import server from "../../environment.js";
 
 export const AuthContext = createContext({});
 
-const url = import.meta.env.IS_PROD ? import.meta.env.VITE_SERVER_PROD_URL : import.meta.env.VITE_SERVER_DEV_URL;
+const url = server
 
 const client = axios.create({
     baseURL:url
