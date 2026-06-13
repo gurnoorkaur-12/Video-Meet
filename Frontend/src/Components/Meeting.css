@@ -1,0 +1,18 @@
+.guest{
+    background-color: #0b5cff;
+    color: white;
+    padding:0.8rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    font-size: 18px;
+    margin: 1rem;
+    font-weight: 600;
+}
+.guest:hover{
+    opacity: 0.85;
+}
+.meeting{
+    display: flex;
+    justify-content: center;
+}

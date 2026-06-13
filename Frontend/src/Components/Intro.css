@@ -1,0 +1,10 @@
+.Intro{
+    margin-top: 5rem;
+    font-size:larger;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:0 30%;
+    white-space: wrap;
+}

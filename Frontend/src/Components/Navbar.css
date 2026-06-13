@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: baseline;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+
+.authBtns button{
+    margin: 2px 4px;
+    padding:5px 10px;
+    border:2px solid #09153f;
+    color: #09153f;
+    background-color: white;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+.authBtns button:hover{
+    background-color: #09153f;
+    color: white;
+}
