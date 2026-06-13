@@ -5,9 +5,9 @@ import status from "http-status";
 import mongoose from "mongoose";
 import cors from "cors";
 import { createServer } from 'http';
-import { connectToSocket } from "./src/controllers/socketManager.js";
-import userRouter from "./src/routes/user.js";
-import { triggerToast } from "../Frontend/public/js/script.js";
+import { connectToSocket } from "./controllers/socketManager.js";
+import userRouter from "./routes/user.js";
+import { triggerToast } from "../../Frontend/public/js/script.js";
 const app = express();
 
 const server = createServer(app);
