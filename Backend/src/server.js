@@ -19,7 +19,7 @@ app.set("port",(process.env.PORT || 3000));
 app.use(cors());
 
 
-app.use('/static', express.static(path.join(import.meta.dirname, '../Frontend/public')));
+app.use('/static', express.static(path.join(import.meta.dirname, '../../Frontend/public')));
 
 main()
     .then(console.log("connection successfull"))
