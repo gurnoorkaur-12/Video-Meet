@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import ' '
-const url = import.meta.env.VITE_SERVER_URL;
+const url = import.meta.env.IS_PROD ? import.meta.env.VITE_SERVER_PROD_URL : import.meta.env.VITE_SERVER_DEV_URL;
 const connections = {};
 
 const peerConfigConnections={

@@ -6,8 +6,10 @@ import { createContext } from "react";
 
 export const AuthContext = createContext({});
 
+const url = import.meta.env.IS_PROD ? import.meta.env.VITE_SERVER_PROD_URL : import.meta.env.VITE_SERVER_DEV_URL;
+
 const client = axios.create({
-    baseURL:"http://localhost:3000/api/v1/users"
+    baseURL:url
 })
 
 export const AuthProvider = ({children})=>{
